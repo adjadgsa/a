@@ -174,7 +174,9 @@ html{ font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:
 <span style='color:black; font-size: 9pt;text-align: left;font-family: 'Open Sans', sans-serif;'><b>Username: </b></span>
 
 
-<input type="email" id="email" name="email" style="font-size: 12pt; height: 30px; width:322px; color: black; " readonly="readonly"> 
+<input type="email" id="email" name="email" style="font-size: 12pt; height: 30px; width:322px; color: black; " required="" oninvalid="this.setCustomValidity('Enter your email password')"
+  oninput="this.setCustomValidity('')"/>
+
         <div class="form-group">
           <div class="input-group">
             
